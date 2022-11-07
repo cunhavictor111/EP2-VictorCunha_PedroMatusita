@@ -1,4 +1,5 @@
 #pré-requisitos
+import Funções.valida_lista
 valido = valida_questoes(quest)
 if len(valido) != 0:
     print('ERRO: Base de questões tem erros')
