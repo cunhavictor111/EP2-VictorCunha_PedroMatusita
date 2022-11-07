@@ -1,5 +1,12 @@
+#import
+from funções import valida_questoes
+from funções import gera_ajuda
+from funções import questao_para_texto
+from funções import sorteia_questao_inedida
+
+from lib_questões import quest
+
 #pré-requisitos
-import Funções.valida_lista
 valido = valida_questoes(quest)
 if len(valido) != 0:
     print('ERRO: Base de questões tem erros')
@@ -11,6 +18,8 @@ dinheiro = 0 #índice
 pulo = 3
 ajuda = 2
 ajuda_uma_vez = 0
+questoes_ja_sorteadas = []
+id_questao = 1
 
 nome = input('INFORME SEU NOME: ')
 
