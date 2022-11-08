@@ -5,6 +5,7 @@ from funções import questao_para_texto
 from funções import sorteia_questao_inedida
 
 from lib_questões import quest
+from lib_questões import base
 
 #pré-requisitos
 valido = valida_questoes(quest)
@@ -43,12 +44,12 @@ while participacao == True:
         nivel = 'medio'
     else:
         nivel = 'dificil'
-    questao = sorteia_questao_inedida(quest,nivel,questoes_ja_sorteadas)
+    questao = sorteia_questao_inedida(base,nivel,questoes_ja_sorteadas)
     questoes_ja_sorteadas.append(questao)
     print(questao_para_texto(questao,id_questao))
     r = True # Variável pra loop de resposta
     while r == True:
-        resposta = input('Qual é a sua resposta?')
+        resposta = input('Qual é a sua resposta? ')
         if resposta == questao['correta']:
             print('E está... certa a resposta! Você agora tem {0} reais!'.format(lista_premios[dinheiro+1]))
             id_questao += 1
