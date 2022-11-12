@@ -22,6 +22,7 @@ ajudas = 2
 ajuda_uma_vez = 0
 questoes_ja_sorteadas = []
 id_questao = 1
+acertos = 0
 cparar = 0 # Você vai entender
 nivel = 0 # É uma variável pra automatizar o jogo e saber qual é o nível da questão
 participacao = True # É uma variável de participação só pra comentários e tudo mais.
@@ -50,28 +51,47 @@ while participacao == True:
     r = True # Variável pra loop de resposta
     while r == True:
         resposta = input('Qual é a sua resposta? ')
+        resposta = resposta.upper()
         if resposta == questao['correta']:
             print('E está... certa a resposta! Você agora tem {0} reais!'.format(lista_premios[dinheiro+1]))
             id_questao += 1
             dinheiro += 1
+            acertos += 1
             input('Aperte CONTINUAR para prosseguir com o jogo! ')
             r = False
-        elif resposta == 'ajuda':
-            ajuda = gera_ajuda(questao)
-            ajudas -= 1
-        elif resposta == 'pula':
-            if nivel == 'facil':
-                print('Eu acharia melhor guardar para as mais difíceis, mas tudo bem, cada um faz suas escolhas.')
-            print('Ok, questão pulada.')
-            r = False
-            pulos -= 1
-        elif resposta == 'parar':
+            if resposta == questao['correta'] and id_questao == 10:
+                print('Você ganhou o jogo! Parabéns!')
+                participacao = False
+        elif resposta == 'AJUDA':
+            if ajudas > 0:
+                ajuda = gera_ajuda(questao)
+                ajudas -= 1
+                print(ajuda)
+            else:
+                print('Você não tem mais ajudas disponíveis!')
+        elif resposta == 'PULA':
+            if pulos > 0:
+                if nivel == 'facil':
+                    print('Eu acharia melhor guardar para as mais difíceis, mas tudo bem, cada um faz suas escolhas.')
+                print('Ok, questão pulada.')
+                r = False
+                pulos -= 1
+            else:
+                print('Você não tem mais pulos disponíveis!')
+        elif resposta == 'PARAR':
             if nivel == 'facil':
                 print('Parar enquanto está fácil, né? Bom, eu não te julgo.')
             if nivel == 'medio':
                 print('Boa! Conseguiu garantir um prêmio gordo e é sempre bom não arriscar.')
             if nivel == 'dificil':
                 print('Logo quando estava ficando interessante!')
+            print('Você terminou o jogo com {0} reais, acertando {1} perguntas.'.format(dinheiro,acertos))            
             print('Obrigado por participar do FORTUNA DESSOFT!!')
             r = False
             participacao = False
+        else:
+            print('E está... errada a resposta! Você, então, sai com nada! Obrigado por jogar!')
+            dinheiro = lista_premios[0]
+            print('Você terminou o jogo com {0} reais, acertando {1} perguntas.'.format(dinheiro,acertos))
+            participacao = False
+            r = False
