@@ -43,6 +43,11 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'opcoes': {'A': 'Netflix', 'B': 'Disney Plus', 'C': 'TIDAL', 'D': 'HBO Max'},
           'correta': 'C'},
 
+          {'titulo': 'Qual destes não é um personagem de Star Wars?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Chewbacca', 'B': 'Han Solo', 'C': 'Spock', 'D': 'Mace Windu'},
+          'correta': 'C'},
+
          {'titulo': 'Qual destes parques não se localiza em São Paulo?!',
           'nivel': 'facil',
           'opcoes': {'A': 'Ibirapuera', 'B': 'Parque do Carmo', 'C': 'Parque Villa Lobos', 'D': 'Morro da Urca'},
@@ -78,6 +83,11 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'opcoes': {'A': 'Marie Curie', 'B': 'Paul Erdős', 'C': 'Clive W.J. Granger', 'D': 'Maria Ressa'},
           'correta': 'A'},
 
+          {'titulo': 'Qual destes não é um deus da mitologia grega?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Bastet', 'B': 'Eros', 'C': 'Hades', 'D': 'Nyx'},
+          'correta': 'A'},
+
          {'titulo': 'Quem é considerada a primeira pessoa programadora do mundo?!',
           'nivel': 'medio',
           'opcoes': {'A': 'Marie Curie', 'B': 'Alan Turing', 'C': 'Ada Lovelace', 'D': 'Edsger Dijkstra'},
@@ -96,6 +106,11 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
          {'titulo': 'Como faço para chamar o SAMU?',
           'nivel': 'medio',
           'opcoes': {'A': 'Ligue 101', 'B': 'Ligue 192', 'C': 'Ligue 109', 'D': 'Ligue 122'},
+          'correta': 'B'},
+          
+          {'titulo': 'Qual o único time do NBA que não é dos EUA?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Vancouver Grizzlies', 'B': 'Toronto Raptors', 'C': 'Cancún Mayans', 'D': 'Montreal Ducks'},
           'correta': 'B'},
 
          {'titulo': 'Qual a segunda pessoa mais seguida no Instagram?',
@@ -128,9 +143,19 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'opcoes': {'A': 'entre 0 e 20 metros', 'B': 'Entre 21 e 40 metros', 'C': 'Entre 41 e 60 metros', 'D': 'Mais que 60 metros'},
           'correta': 'B'},
 
+          {'titulo': 'Qual o jogo mais vendido do mundo?',
+          'nivel': 'dificil',
+          'opcoes': {'A': 'Wii Sports', 'B': 'Minecraft', 'C': 'Tetris', 'D': 'Super Mario Bros.'},
+          'correta': 'B'},
+
          {'titulo': 'Em que ano faleceu Charles Babbage?',
           'nivel': 'dificil',
           'opcoes': {'A': '2022', 'B': '1791', 'C': '1935', 'D': '1871'},
+          'correta': 'A'},
+
+          {'titulo': 'Qual dessas é uma cidade da Coréia do Sul?',
+          'nivel': 'dificil',
+          'opcoes': {'A': 'Jeju', 'B': 'Aomori', 'C': 'Manchúria', 'D': 'Pyongyang'},
           'correta': 'A'},
 
          {'titulo': 'Einstein foi Nobel de física em qual ano?',
@@ -156,6 +181,11 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
          {'titulo': 'O que é Necrose?',
           'nivel': 'dificil',
           'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
+          'correta': 'D'},
+
+          {'titulo': 'Quantos kilometros aproximadamente são um parsec?',
+          'nivel': 'dificil',
+          'opcoes': {'A': '1,6', 'B': '9 milhões', 'C': '1 bilhão', 'D': '31 trilhões'},
           'correta': 'D'}
         ]
 
