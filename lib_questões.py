@@ -37,7 +37,7 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'nivel': 'facil',
           'opcoes': {'A': '2019', 'B': '2021', 'C': '2015', 'D': '2018'},
           'correta': 'B'},
-         
+
          {'titulo': 'Qual destes não é um app com foco em streaming de vídeo?',
           'nivel': 'facil',
           'opcoes': {'A': 'Netflix', 'B': 'Disney Plus', 'C': 'TIDAL', 'D': 'HBO Max'},
@@ -61,8 +61,8 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
          {'titulo': 'Dentre os listados, qual destes esportes é menos praticado no Brasil?',
           'nivel': 'facil',
           'opcoes': {'A': 'Natação', 'B': 'Vôlei', 'C': 'Ski Cross Country', 'D': 'Futebol'},
-          'correta': 'C'},
-         
+          'correta': 'C'},  
+
          {'titulo': 'Qual o resultado da operação 5 + 2 * 3?',
           'nivel': 'medio',
           'opcoes': {'A': '21', 'B': '11', 'C': '30', 'D': '10'},
@@ -172,22 +172,46 @@ quest = [{'titulo': 'Qual o resultado da operação 57 + 32?',
           'nivel': 'dificil',
           'opcoes': {'A': '120º C', 'B': '15º C', 'C': '-210º C', 'D': '-180º C'},
           'correta': 'C'},
-         
+
          {'titulo': 'Quantos gols Pelé fez oficialmente?',
           'nivel': 'dificil',
           'opcoes': {'A': '815', 'B': '762', 'C': '1100', 'D': '1057'},
           'correta': 'B'},
 
-         {'titulo': 'O que é Necrose?',
-          'nivel': 'dificil',
-          'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
-          'correta': 'D'},
-
           {'titulo': 'Quantos kilometros aproximadamente são um parsec?',
           'nivel': 'dificil',
           'opcoes': {'A': '1,6', 'B': '9 milhões', 'C': '1 bilhão', 'D': '31 trilhões'},
-          'correta': 'D'}
-        ]
+          'correta': 'D'},
+
+          {'titulo': 'Quando foi lançado o primeiro videogame?',
+          'nivel': 'facil',
+          'opcoes': {'A': '1990', 'B': '1985', 'C': '1972', 'D': '2013'},
+          'correta': 'C'},
+
+          {'titulo': 'Qual desses filmes teve a maior bilheteria da história?',
+          'nivel': 'facil',
+          'opcoes': {'A': 'Avatar', 'B': 'Vingadores: Ultimato', 'C': 'Titanic', 'D': 'Gente Grande'},
+          'correta': 'A'},
+
+          {'titulo': 'Qual é o jogador de futebol mais caro do mundo?',
+          'nivel': 'medio',
+          'opcoes': {'A': 'Neymar Jr.', 'B': 'Haaland', 'C': 'Mbappé', 'D': 'Cristiano Ronaldo'},
+          'correta': 'C'},
+
+          {'titulo': 'Qual foi o ano em que o Brasil ganhou a sua 5a Copa do Mundo?',
+          'nivel': 'medio',
+          'opcoes': {'A': '2007', 'B': '1998', 'C': '2002', 'D': '2006'},
+          'correta': 'C'},
+
+          {'titulo': 'Qual desses é o artista com mais ouvintes mensais no Spotify?',
+          'nivel': 'dificil',
+          'opcoes': {'A': 'The Weeknd', 'B': 'BTS', 'C': 'Taylor Swift', 'D': 'Drake'},
+          'correta': 'C'},
+          
+         {'titulo': 'O que é Necrose?',
+          'nivel': 'dificil',
+          'opcoes': {'A': 'Uma banda de Rock', 'B': 'Uma marca de luxo', 'C': 'Cidade Francesa', 'D': 'Morte de tecido orgânico'},
+          'correta': 'D'}]
 
 from funções import transforma_base
 

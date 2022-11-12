@@ -89,9 +89,11 @@ while participacao == True:
             print('Obrigado por participar do FORTUNA DESSOFT!!')
             r = False
             participacao = False
-        else:
+        elif resposta in questao['opcoes']:
             print('E está... errada a resposta! Você, então, sai com nada! Obrigado por jogar!')
             dinheiro = lista_premios[0]
             print('Você terminou o jogo com {0} reais, acertando {1} perguntas.'.format(dinheiro,acertos))
             participacao = False
             r = False
+        else:
+            print('Comando não reconhecido, tente de novo.')
