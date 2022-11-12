@@ -33,7 +33,7 @@ print('\nBEM-VINDO A FORTUNA DESSOFT {0}'.format(nome.upper()))
 
 #manual
 print('\n-----------------\nMANUAL\n-----------------\n')
-print('Cada pergunta tem quatro alternativas: "A" , "B" , "C" , "D"\nVocê também tem direito de "ajuda" , "pula" , "parar"')
+print('Cada pergunta tem quatro alternativas: "A" , "B" , "C" , "D"\nVocê também tem direito de "AJUDA" , "PULA" , "PARAR"')
 input('Aperte ENTER para continuar: ')
 
 print('\nAgora que você conhece as regras:\n\nQUE COMECE A FORTUNA DESSOFT!!')
